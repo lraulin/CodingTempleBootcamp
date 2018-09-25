@@ -27,11 +27,11 @@ namespace WOS
             int num1 = int.Parse(Console.ReadLine());
             Console.Write("Enter another number: ");
             int num2 = int.Parse(Console.ReadLine());
-            Console.WriteLine("{0} + {1} = {2}", num1, num2, (num1 + num2));
-            Console.WriteLine("{0} - {1} = {2}", num1, num2, (num1 - num2));
-            Console.WriteLine("{0} × {1} = {2}", num1, num2, (num1 * num2));
-            Console.WriteLine("{0} ÷ {1} = {2}", num1, num2, (num1 / num2));
-            Console.WriteLine("{0} mod {1} = {2}", num1, num2, (num1 % num2));
+            Console.WriteLine("{0} + {1} = {2}", num1, num2, num1 + num2);
+            Console.WriteLine("{0} - {1} = {2}", num1, num2, num1 - num2);
+            Console.WriteLine("{0} × {1} = {2}", num1, num2, num1 * num2);
+            Console.WriteLine("{0} ÷ {1} = {2}", num1, num2, num1 / num2);
+            Console.WriteLine("{0} mod {1} = {2}", num1, num2, num1 % num2);
             Console.WriteLine();
         }
 
@@ -282,7 +282,7 @@ namespace WOS
             Week2Problem3(name);
 
             // Week 2 Problem 4
-            Console.WriteLine(Week2Problem4(numbers));
+            //Console.WriteLine(Week2Problem4(numbers));
 
             // Week 2 Problem 5
             Console.WriteLine(Week2Problem5("Hello", 1, 'a'));
