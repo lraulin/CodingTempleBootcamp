@@ -16,7 +16,7 @@ namespace WOS
         static void Week1Problem2()
         {
             Console.WriteLine("Week 1 Problem 2");
-            Console.WriteLine((5.0 / 24.0).ToString());
+            Console.WriteLine(5.0 / 24.0);
             Console.WriteLine();
         }
 
@@ -27,11 +27,11 @@ namespace WOS
             int num1 = int.Parse(Console.ReadLine());
             Console.Write("Enter another number: ");
             int num2 = int.Parse(Console.ReadLine());
-            Console.WriteLine("{0} + {1} = {2}", num1.ToString(), num2.ToString(), (num1 + num2).ToString());
-            Console.WriteLine("{0} - {1} = {2}", num1.ToString(), num2.ToString(), (num1 - num2).ToString());
-            Console.WriteLine("{0} × {1} = {2}", num1.ToString(), num2.ToString(), (num1 * num2).ToString());
-            Console.WriteLine("{0} ÷ {1} = {2}", num1.ToString(), num2.ToString(), (num1 / num2).ToString());
-            Console.WriteLine("{0} mod {1} = {2}", num1.ToString(), num2.ToString(), (num1 % num2).ToString());
+            Console.WriteLine("{0} + {1} = {2}", num1, num2, (num1 + num2));
+            Console.WriteLine("{0} - {1} = {2}", num1, num2, (num1 - num2));
+            Console.WriteLine("{0} × {1} = {2}", num1, num2, (num1 * num2));
+            Console.WriteLine("{0} ÷ {1} = {2}", num1, num2, (num1 / num2));
+            Console.WriteLine("{0} mod {1} = {2}", num1, num2, (num1 % num2));
             Console.WriteLine();
         }
 
@@ -47,7 +47,7 @@ namespace WOS
             Console.Write("Fourth Number: ");
             int num4 = int.Parse(Console.ReadLine());
             double average = ((double)num1 + (double)num2 + (double)num3 + (double)num4) / 4.0;
-            Console.WriteLine("The average is {0}.", average.ToString());
+            Console.WriteLine("The average is {0}.", average);
             Console.WriteLine();
         }
 
@@ -66,7 +66,7 @@ namespace WOS
             if (int.Parse(Console.ReadLine()) >= 0) amountOfPositives++;
             Console.WriteLine("Enter another integer: ");
             if (int.Parse(Console.ReadLine()) >= 0) amountOfPositives++;
-            Console.WriteLine("Amount of Positives: {0}", amountOfPositives.ToString());
+            Console.WriteLine("Amount of Positives: {0}", amountOfPositives);
             Console.WriteLine();
         }
 
@@ -90,7 +90,7 @@ namespace WOS
             array[1] = int.Parse(Console.ReadLine());
             Console.Write("3: ");
             array[2] = int.Parse(Console.ReadLine());
-            Console.WriteLine("Largest number: {0}", array.Max().ToString());
+            Console.WriteLine("Largest number: {0}", array.Max());
         }
 
         static void Week1Problem9()
@@ -113,19 +113,19 @@ namespace WOS
             {
                 for (int i = 0; i <= num; i++)
                 {
-                    Console.WriteLine(i.ToString());
+                    Console.WriteLine(i);
                 }
             }
             else if (num < 0)
             {
                 for (int i = 0; i >= num; i--)
                 {
-                    Console.WriteLine(i.ToString());
+                    Console.WriteLine(i);
                 }
             }
             else
             {
-                Console.WriteLine(0.ToString());
+                Console.WriteLine(0);
             }
             Console.WriteLine();
         }
@@ -153,7 +153,7 @@ namespace WOS
             int num = int.Parse(Console.ReadLine());
             for (int i = 1; i <= num; i++)
             {
-                if (i % 2 == 1) Console.Write("{0} ", i.ToString());
+                if (i % 2 == 1) Console.Write("{0} ", i);
             }
             Console.Write("\n");
             Console.WriteLine();
@@ -176,7 +176,7 @@ namespace WOS
 
         static void Week1Problem14(int[] arr)
         {
-            Console.WriteLine(arr.Sum().ToString());
+            Console.WriteLine(arr.Sum());
         }
 
         static void Week1Problem15(int[] arr)
@@ -246,20 +246,19 @@ namespace WOS
 
         static void Main(string[] args)
         {
-            //Week1Problem1();
-            //Week1Problem2();
-            //Week1Problem3();
-            //Week1Problem4();
-            //Week1Problem5();
-            //Week1Problem6();
-            //Week1Problem7();
-            //Week1Problem8();
-            //Week1Problem9();
-            //Week1Problem10();
-            //Week1Problem11();
-            //Week1Problem12();
-            //Week1Problem13();
-            int[] numbers = { 1, 2, 3, 4, 5 };
+            Week1Problem1();
+            Week1Problem2();
+            Week1Problem3();
+            Week1Problem4();
+            Week1Problem5();
+            Week1Problem6();
+            Week1Problem7();
+            Week1Problem8();
+            Week1Problem9();
+            Week1Problem10();
+            Week1Problem11();
+            Week1Problem12();
+            Week1Problem13();
             //Week1Problem14(numbers);
             int[] numbers2 = { 1, 4, 2, 6, 5, 8 };
             //Week1Problem15(numbers2);
@@ -273,10 +272,10 @@ namespace WOS
             // Week 2 Problem 2
             string s1 = "hello";
             string s2 = "hello";
-            Console.WriteLine(Week2Problem2(s1, s2).ToString());
+            Console.WriteLine(Week2Problem2(s1, s2));
             string s3 = "world";
             string s4 = "World";
-            Console.WriteLine(Week2Problem2(s3, s4).ToString());
+            Console.WriteLine(Week2Problem2(s3, s4));
 
             // Week 2 Problem 3
             string name = "Dave";
